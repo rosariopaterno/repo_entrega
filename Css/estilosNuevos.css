@@ -1,0 +1,1039 @@
+@charset "UTF-8";
+header {
+  height: 20vh;
+  background-color: #212529;
+  padding-top: 50px; }
+
+h1 {
+  color: dimgray;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  text-align: center;
+  word-spacing: 20px;
+  letter-spacing: 10px; }
+
+h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000px;
+  font-size: 35px;
+  text-align: center;
+  word-spacing: 20px;
+  letter-spacing: 10px; }
+
+body {
+  margin: 0; }
+
+.tituloPrincipal {
+  color: #77c080;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  text-align: center;
+  word-spacing: 20px;
+  letter-spacing: 10px;
+  padding-left: 30px; }
+
+p {
+  color: #353535;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: justify;
+  word-spacing: 0px;
+  letter-spacing: 2px; }
+
+#listas {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555555; }
+
+ul {
+  list-style-type: square; }
+
+.tituloDosEstilo {
+  color: dimgray;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 0px;
+  padding-left: 30px; }
+
+#tituloListas {
+  color: #181717;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #e2dddd; }
+
+.tituloDosEstiloDos {
+  color: #77c080;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  text-align: left;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  text-align: center; }
+
+td {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555555; }
+
+fieldset {
+  background-image: url("fondito.jpg"); }
+
+form {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 2000;
+  font-size: 35px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.288); }
+
+legend {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1500;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: rgba(15, 15, 15, 0.76); }
+
+img {
+  max-width: 100%; }
+
+iframe {
+  max-width: 100%; }
+
+#grilla {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 10% 30% 25% 30% 10%;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "portada" "nosotros" "trabajos" "footer"; }
+
+#grillaUno {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-area: header;
+  width: 100%;
+  height: 200px; }
+
+main {
+  grid-area: portada; }
+
+.franjatexto {
+  height: 375px;
+  width: 30hv;
+  background-color: #afafaf;
+  grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; }
+  .franjatexto .franjatexto__titulo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    padding: 1em; }
+  .franjatexto .franjatexto__parrafo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px; }
+
+.franjaimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  grid-area: trabajos; }
+  .franjaimagenes .franjaimagenes__titulo {
+    color: dimgray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 5px;
+    word-spacing: 0; }
+  .franjaimagenes .franjaimagenes__estiloimagen {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    justify-content: center; }
+  .franjaimagenes .franjaimagenes__imagen {
+    max-width: 100%;
+    height: auto;
+    padding-right: 10px; }
+
+#grillaSobreNosotros {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header" "contenido" "footer"; }
+
+#grillaPortadaSobreNosotros {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: contenido;
+  max-width: 100%;
+  height: auto;
+  justify-content: center; }
+
+#fondoTituloPaginas {
+  background-color: dimgray;
+  width: 1500px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#contenedorImagenTexto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em; }
+
+#item1 {
+  float: left;
+  height: auto;
+  max-width: 45%;
+  display: flex;
+  margin: 1em;
+  padding: 1em; }
+
+#item2 {
+  float: right;
+  height: auto;
+  max-width: 40%;
+  display: flex;
+  margin: 1em;
+  padding: 1em;
+  background-color: white; }
+
+#grillaProductos {
+  display: grid;
+  height: 1000px;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 65% 20%;
+  grid-template-areas: "header" "contenidoProductos" "footer"; }
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: contenidoProductos;
+  max-width: 100%;
+  height: auto;
+  justify-content: center; }
+  .productos .productos__fondotitulo {
+    background-color: dimgray;
+    width: 1500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .productos .productos__titulo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000px;
+    font-size: 35px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px; }
+  .productos .productos__imagenes {
+    padding-top: 50px; }
+  .productos .productos__estiloimagenes {
+    max-width: 100%;
+    height: auto; }
+  .productos .productos__estiloimagenes:hover {
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+
+#grillaTrabajosRealizados {
+  display: grid;
+  height: 1000px;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 65% 20%;
+  grid-template-areas: "header" "contenidoTrabajosRealizados" "footer"; }
+
+.franja {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: contenidoTrabajosRealizados;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  padding-top: 0px; }
+  .franja .franja__fondotitulo {
+    background-color: dimgray;
+    width: 1500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .franja .franja__titulo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000px;
+    font-size: 35px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px; }
+  .franja .franja__estiloBordeImagenes {
+    border: 15px solid #ffffff;
+    transform: scale(10px, 20px);
+    transition: all 1s; }
+  .franja .franja__estiloBordeImagenes:hover {
+    border: 30px solid #22b573;
+    transform: scale(10px, 20px); }
+
+#grillaContacto {
+  display: grid;
+  height: 1200px;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "header" "formulario" "footer"; }
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: formulario;
+  max-width: 100%;
+  height: auto;
+  justify-content: center; }
+  .contacto .contacto__fondotitulo {
+    background-color: dimgray;
+    width: 1500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .contacto .contacto__titulo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000px;
+    font-size: 35px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px; }
+
+#grillaDos {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: center; }
+
+#grillaTres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  height: auto; }
+
+#estiloUl {
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center; }
+
+#estiloMenu {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 2000px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px; }
+
+.EstiloPortada {
+  max-width: 100%;
+  height: auto; }
+
+#EstiloFranjaTresIndex {
+  height: 100%;
+  width: 30hv;
+  padding: 50px;
+  background-color: #afafaf; }
+
+#cajaFlexibleSobreNosotros {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center; }
+
+.formularioClase {
+  margin: 10%; }
+
+.estiloCarrusel {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-self: right;
+  align-content: center;
+  background: white;
+  color: #343a40; }
+
+.navbar-collapse {
+  z-index: 10; }
+
+/**desde aca footer**/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+footer {
+  width: 100%;
+  background: #202020;
+  color: white; }
+
+.container-footer-all {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px; }
+  .container-footer-all .container-footer-all__container-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .container-footer-all .container-footer-all__colum1 {
+    max-width: 400px; }
+  .container-footer-all .container-footer-all__titulo {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif; }
+  .container-footer-all .container-footer-all__row2 {
+    margin-top: 20px;
+    display: flex; }
+  .container-footer-all .container-footer-all__img {
+    width: 36px;
+    height: 36px; }
+  .container-footer-all .container-footer-all__texto {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7; }
+  .container-footer-all .container-footer-all__column2 {
+    max-width: 400px; }
+  .container-footer-all .container-footer-all__column3 {
+    max-width: 400px; }
+
+.colum1 h1 {
+  font-size: 22px; }
+
+.colum1 p {
+  font-size: 14px;
+  color: #C7C7C7;
+  margin-top: 20px; }
+
+.colum2 {
+  max-width: 400px; }
+
+.colum2 h1 {
+  font-size: 22px; }
+
+.row {
+  margin-top: 20px;
+  display: flex; }
+
+.row img {
+  width: 36px;
+  height: 36px; }
+
+.row label {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #C7C7C7; }
+
+.colum3 {
+  max-width: 400px; }
+
+.colum3 h1 {
+  font-size: 22px; }
+
+.row2 {
+  margin-top: 20px;
+  display: flex; }
+
+.row2 img {
+  width: 36px;
+  height: 36px; }
+
+.row2 label {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px; }
+
+.container-footer {
+  width: 100%;
+  background: #101010; }
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; }
+
+.copyright {
+  color: #C7C7C7; }
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
+
+.information a {
+  text-decoration: none;
+  color: #C7C7C7; }
+
+/**desde aca cards animados**/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease-out;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block; }
+
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.contenedor-cards .contenedor-card-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 25%;
+  margin: 1%;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+  cursor: help; }
+
+.contenedor-card-item-wrapper {
+  overflow: hidden;
+  position: relative !important;
+  background: #212529;
+  border-radius: 5px; }
+
+.contenedor-card-item img {
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 5px; }
+
+.contenedor-card-item .contenedor-info .fondo {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.88) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.88) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.88) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e0000000',GradientType=0 );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.contenedor-card-item .contenedor-info .info {
+  color: #fff;
+  position: relative;
+  z-index: 500;
+  padding: 20px 15px; }
+
+.contenedor-card-item .contenedor-info .info .titulo {
+  margin: 0;
+  font-size: 20px; }
+
+.contenedor-card-item .contenedor-info .info .categoria {
+  display: block;
+  font-size: 10px; }
+
+.contenedor-card-item:hover .contenedor-info {
+  bottom: 0; }
+
+.contenedor-card-item:hover img {
+  top: -30px;
+  -webkit-transform: rotate(-5deg) scale(2);
+  -ms-transform: rotate(-5deg) scale(2);
+  -o-transform: rotate(-5deg) scale(2);
+  transform: rotate(-5deg) scale(2); }
+
+.titulo {
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
+
+/** botón ver más productos**/
+.linkcategoria {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; }
+
+.linkcategoria:hover {
+  font-size: 14px;
+  color: #22b573;
+  font-family: 'Montserrat', sans-serif; }
+
+@media only screen and (max-width: 480px) {
+  #grilla {
+    display: grid;
+    height: 2400px;
+    grid-template-rows: 8% 5% 22% 60% 15%;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "portada" "nosotros" "trabajos" "footer"; }
+  #grillaDos {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%; }
+  #grillaUno {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%; }
+  .franjatexto {
+    height: 500px;
+    width: 30hv;
+    background-color: #afafaf;
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+    .franjatexto .franjatexto__titulo {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 1000;
+      font-size: 25px;
+      text-align: center;
+      word-spacing: 20px;
+      letter-spacing: 5px;
+      padding: 1em; }
+    .franjatexto .franjatexto__parrafo {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      line-height: 30px; }
+  h1 {
+    color: dimgray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 5px; }
+  #h2FranjaDosIndex {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 1px; }
+  #PFranjaDosIndex {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px; }
+  .EstiloPortada {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px; }
+  #EstiloImagenesIndex {
+    width: auto;
+    height: 100%; }
+  #h2FranjaTresIndex {
+    color: dimgray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 1px;
+    word-spacing: 0; }
+  #grillaSobreNosotros {
+    display: grid;
+    height: 2000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 25%;
+    grid-template-areas: "header" "contenido" "footer"; }
+  #grillaPortadaSobreNosotros {
+    grid-area: contenido; }
+  #contenedorImagenTexto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em; }
+  #item1 {
+    float: left;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center; }
+  #item2 {
+    float: left;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    margin: 1em;
+    padding: 1em; }
+  .tituloPrincipal {
+    color: #77c080;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 01px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .tituloDosEstilo {
+    color: #7d7e83;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  p {
+    color: #353535;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px; }
+  #grillaProductos {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 80% 25%;
+    grid-template-areas: "header" "contenidoProductos" "footer"; }
+  #franjaImagenesProductos {
+    padding-top: 0px; }
+  #grillaContenidoProductos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: contenidoProductos;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 0px; }
+  #grillaTrabajosRealizados {
+    display: grid;
+    height: 1400px;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 80% 25%;
+    grid-template-areas: "header" "contenidoTrabajosRealizados" "footer"; }
+  #grillaContenidoTrabajosRealizados {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: contenidoTrabajosRealizados;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 50px; }
+  #grillaContacto {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 75% 5%;
+    grid-template-areas: "header" "formulario" "footer"; }
+  #grillaFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: formulario;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 50px; }
+  form {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 2000;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.288); }
+  legend {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1500;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(15, 15, 15, 0.76); }
+  h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000px;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px; }
+  /** productos **/
+  .contenedor {
+    width: 90%; }
+  .contenedor-cards .contenedor-card-item {
+    width: 90%; }
+  /** footer **/
+  .container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px; }
+    .container-footer-all .container-footer-all__container-body {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    .container-footer-all .container-footer-all__colum1 {
+      max-width: 400px; }
+    .container-footer-all .container-footer-all__titulo {
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif; }
+    .container-footer-all .container-footer-all__row2 {
+      margin-top: 20px;
+      display: flex; }
+    .container-footer-all .container-footer-all__img {
+      width: 36px;
+      height: 36px; }
+    .container-footer-all .container-footer-all__texto {
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #C7C7C7; }
+    .container-footer-all .container-footer-all__column2 {
+      max-width: 400px; }
+    .container-footer-all .container-footer-all__column3 {
+      max-width: 400px; } }
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  #grilla {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10% 15% 20% 45% 10%;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "portada" "nosotros" "trabajos" "footer"; }
+  #grillaDos {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%; }
+  #grillaUno {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%; }
+  h1 {
+    color: dimgray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    margin-bottom: 20px; }
+  #h2FranjaDosIndex {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 35px;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 1px; }
+  #PFranjaDosIndex {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px; }
+  .EstiloPortada {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px; }
+  #h2FranjaTresIndex {
+    color: dimgray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 35px;
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 1px;
+    word-spacing: 0; }
+  #EstiloImagenesIndex {
+    width: 100%; }
+  #grillaSobreNosotros {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 75% 25%;
+    grid-template-areas: "header" "contenido" "footer"; }
+  #grillaPortadaSobreNosotros {
+    grid-area: contenido; }
+  #contenedorImagenTexto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em; }
+  #item1 {
+    float: left;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    margin: 1em;
+    padding: 1em; }
+  #item2 {
+    float: right;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    margin: 1em;
+    padding: 1em; }
+  .tituloPrincipal {
+    color: #77c080;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 35px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 01px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .tituloDosEstilo {
+    color: #7d7e83;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  p {
+    color: #353535;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px; }
+  #grillaProductos {
+    display: grid;
+    height: 1200px;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 80% 25%;
+    grid-template-areas: "header" "contenidoProductos" "footer"; }
+  #grillaContenidoProductos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: contenidoProductos;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 20px; }
+  #grillaTrabajosRealizados {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 75% 20%;
+    grid-template-areas: "header" "contenidoTrabajosRealizados" "footer"; }
+  #grillaContenidoTrabajosRealizados {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: contenidoTrabajosRealizados;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 50px; }
+  #grillaContacto {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 75% 15%;
+    grid-template-areas: "header" "formulario" "footer"; }
+  #grillaFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: formulario;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 50px; }
+  form {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 2000;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.288); }
+  legend {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1500;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(15, 15, 15, 0.76); }
+  h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000px;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px; }
+  /** productos **/
+  .contenedor {
+    width: 95%; }
+  .contenedor-cards .contenedor-card-item {
+    width: 48%;
+    margin: 1%; } }
